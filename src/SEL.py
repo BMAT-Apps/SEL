@@ -134,9 +134,15 @@ class MainWindow(QMainWindow):
             layout.addWidget(self.tab)
             
         else:
+            # get job_info
+            path = os.path.dirname(os.path.abspath(__file__))    
             # Create layout
             layout = QVBoxLayout()
             self.tabs = QTabWidget(self)
+            if sss_slurm != None:
+                self.job_json = None
+                with open(pjoin(path, sss_slurm), 'r') as f:
+                    self.job_json = json.load(f)
             
             self.main_tab = SELDetectionTab(self, sss_slurm)    
             self.tabs.addTab(self.main_tab, "Main") 
@@ -146,18 +152,12 @@ class MainWindow(QMainWindow):
                 self.tabs.addTab(self.kwargs_tab, "Kwargs")
             
             if sss_slurm != None:
-                # get job_info
-                path = os.path.dirname(os.path.abspath(__file__))                
                 
                 # Take into account a list of job
                 if type(sss_slurm) != list:
                     print('sss_slurm not a list')
                     if not pexists(pjoin(path, sss_slurm)):
                         print('[ERROR] sss_slurm json file not found')
-                    
-                    self.job_json = None
-                    with open(pjoin(path, sss_slurm), 'r') as f:
-                        self.job_json = json.load(f)
                                         
                     self.job_tab = JobTab(self, self.job_json["slurm_infos"])
                     
