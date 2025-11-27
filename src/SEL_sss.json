@@ -1,0 +1,17 @@
+{
+	"python_script":"/storage/research/ions/cemo-pm/shared/BMAT/Pipelines/NIL_SEL/bids_SEL.py",
+	"venv":"",
+	"log":"/storage/research/ions/cemo-pm/shared/BMAT/Pipelines/NIL_SEL/logs",
+	"modules":["FreeSurfer/7.3.2", "Python/3.10", "ANTs", "NiBabel", "scikit-image", "scikit-learn"],
+	"slurm_infos":{
+		"job-name":"bids_SEL",
+		"nodes":"1",
+		"ntasks":"1",
+		"cpus-per-task":"4",
+		"mem-per-cpu":"4024",
+		"time":"05:00:00",
+		"mail-type":"FAIL",
+		"mail-user":"colin.vandenbulcke@uclouvain.be"
+	},
+	"args":{"--derivative":"SEL", "--flair":"FLAIR", "--mprage":"acq-MPRAGE_T1w", "--derivative-mask":"nnUNet", "--mask":"mask-bin_algo-nnUNet_FLAIR", "--samseg":"", "--criteria-only":""}
+}

@@ -1,0 +1,18 @@
+{
+	"name": "SEL",
+	"source_code": "SEL.py",
+	"import_name": "SEL",
+	"attr": "SEL",
+	"add_info":{
+		"kwargs":{
+			"deriv":"SEL", 
+			"flair":"FLAIR", 
+			"mprage":"acq-MPRAGE_T1w", 
+			"deriv_mask":"nnUNet", 
+			"mask_name":"mask-bin_algo-nnUNet_FLAIR", 
+			"samseg":false, 
+			"criteria_only":false
+		},
+		"no_sss_slurm":"SEL_sss.json"
+		}
+}
