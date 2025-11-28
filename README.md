@@ -2,7 +2,7 @@
 Slowly Expanding Lesions (SELs) detection algorithm
 
 >[!CAUTION]
->**Attention, this pipeline includes major methodological limitations ! It was implemented for methodological assessment purposes and should not be used without reading the associated paper (see How to cite below)!** !!!
+>**Attention, this pipeline includes major methodological limitations ! It was implemented for methodological assessment purposes and should not be used without reading the associated paper (see How to cite below)!** ⚠️
 
 ## Requirements
 
