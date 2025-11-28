@@ -38,7 +38,7 @@ The first figure below shows the window of this pipeline. This window contains t
 *Typically, SEL detection takes a couple of hours.*
 
 
-![SEL window](Readme_pictures/SEL_win.png)
+![SEL window](./Readme_pictures/SEL_win.png)
 
 The second Tab "Kwargs" tab of the pipeline is used to enter specific arguments to use for the pipeline (see figure below). These arguments can be changed here for one specific run or their default values can be changed more permanently in the SEL.json file (see explanation in *Change pipeline option*). Here are a list of the different arguments for this pipeline:
 

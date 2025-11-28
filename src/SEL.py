@@ -16,6 +16,7 @@ from os.path import exists as pexists
 import logging
 from PyQt5.QtCore import (QSize,
                           Qt,
+                          QUrl,
                           QModelIndex,
                           QMutex,
                           QObject,
@@ -234,6 +235,8 @@ class HelpWindow(QWidget):
 
         # Setup QTextBrowser to display the HTML content
         self.text_browser = QTextBrowser()
+        base_path = os.path.dirname(os.path.abspath(markdown_file))
+        self.text_browser.setSearchPaths([base_path])
         self.text_browser.setHtml(html_content)
 
         layout = QVBoxLayout()
