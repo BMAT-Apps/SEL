@@ -16,7 +16,7 @@ Currently, all requirements pipeline should be installed on the user's computer 
 
 ## How to cite
 
-1. (coming soon)
+1. Vanden Bulcke, C. et al. Do slowly expanding lesions correspond to chronic active multiple sclerosis lesions? An integrated imaging analysis study. medRxiv 2025.12.03.25341192 (2025) doi:10.64898/2025.12.03.25341192.
 
 2. Vanden Bulcke, C. et al. BMAT: An open-source BIDS managing and analysis tool. NeuroImage: Clinical 36, 103252 (2022).
 
